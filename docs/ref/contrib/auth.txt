@@ -67,16 +67,16 @@ Fields
 
     .. attribute:: is_staff
 
-        Boolean. Designates whether this user can access the admin site.
+        Boolean. Allows this user to access the admin site.
 
     .. attribute:: is_active
 
-        Boolean. Designates whether this user account should be considered
-        active. We recommend that you set this flag to ``False`` instead of
+        Boolean. Helps to identify that a user is active.
+        We recommend that you set this flag to ``False`` instead of
         deleting accounts; that way, if your applications have any foreign keys
         to users, the foreign keys won't break.
 
-        This doesn't necessarily control whether or not the user can log in.
+        This doesn't necessarily control if the user can log in.
         Authentication backends aren't required to check for the ``is_active``
         flag but the default backend
         (:class:`~django.contrib.auth.backends.ModelBackend`) and the
@@ -94,8 +94,7 @@ Fields
 
     .. attribute:: is_superuser
 
-        Boolean. Designates that this user has all permissions without
-        explicitly assigning them.
+        Boolean. Gives a user all permissions without explicitly assigning them.
 
     .. attribute:: last_login
 
@@ -103,7 +102,7 @@ Fields
 
     .. attribute:: date_joined
 
-        A datetime designating when the account was created. Is set to the
+        The datetime when the account was created. Is set to the
         current date/time by default when the account is created.
 
 Attributes
